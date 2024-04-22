@@ -1,7 +1,7 @@
 package Week1;
 import java.util.Scanner;
 
-public class CircleAreAndPerimeter {
+public class CircleArea {
     public static void main(String[] args) {
         double pi=3.14; int r,merkezAci;
         Scanner input= new Scanner(System.in);
