@@ -15,7 +15,7 @@ public class UcgenAlani {
         int ucgenCevre=(a+b+c);
         System.out.print("Üçgenin Çevresi :");
         System.out.println(ucgenCevre);
-        float ucgenAlan=u*(u-a)*(u-b)*(u-c);
+        float ucgenAlan= (float)Math.sqrt(u*(u-a)*(u-b)*(u-c));
         System.out.print("Üçgenin Alanı :");
         System.out.println(ucgenAlan);
     }
