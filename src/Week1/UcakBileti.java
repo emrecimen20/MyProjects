@@ -16,45 +16,50 @@ public class UcakBileti {
 
         normalPrice=(distance*price);
 
-
-        if((age<12) && (tripType==1)){
-            yasIndirimi=(normalPrice*50)/100;
-            indirimliTutar=normalPrice-yasIndirimi;
-            gidisDonus=(indirimliTutar*20)/100;
-            toplamTutar=(indirimliTutar-gidisDonus)*2;
-            System.out.print("Toplam Tutar :" + toplamTutar);
-        } else if ((age<12)&&(tripType==2)) {
-            yasIndirimi=(normalPrice*50)/100;
-            indirimliTutar=normalPrice-yasIndirimi;
-            System.out.println("Toplam Tutar :" + indirimliTutar);
-        } else if ((age>12) && (age<24) && (tripType==1)) {
-            yasIndirimi=(normalPrice*10)/100;
-            indirimliTutar=normalPrice-yasIndirimi;
-            gidisDonus=(indirimliTutar*20)/100;
-            toplamTutar=(indirimliTutar-gidisDonus)*2;
-            System.out.println("Toplam Tutar :" + toplamTutar);
-        } else if((age>12) && (age<24) && (tripType==2)) {
-            yasIndirimi=(normalPrice*10)/100;
-            indirimliTutar=normalPrice-yasIndirimi;
-            System.out.println("Toplam Tutar :" + indirimliTutar);
-        } else if ((age>24)&&(age<65)&&(tripType==1)) {
-            gidisDonus=(normalPrice*20)/100;
-            toplamTutar=(normalPrice-gidisDonus)*2;
-            System.out.println("Toplam tutar :" + toplamTutar);
-        } else if ((age>24)&&(age<65)&&(tripType==2)) {
-            System.out.println("Toplam Tutar :" + normalPrice);
-        } else if ((age>65) && tripType==1) {
-            yasIndirimi=(normalPrice*30)/100;
-            indirimliTutar=normalPrice-yasIndirimi;
-            gidisDonus=(indirimliTutar*20)/100;
-            toplamTutar=(indirimliTutar-gidisDonus)*2;
-            System.out.print("Toplam Tutar :" + toplamTutar);
-        } else if ((age>65) && (tripType==2)) {
-            yasIndirimi=(normalPrice*30)/100;
-            indirimliTutar=normalPrice-yasIndirimi;
-            System.out.println("Toplam Tutar :" + indirimliTutar);
-        }else{
-            System.out.println("Hatalı veri Girdiniz!");
+        if (distance>0){
+            if((age<12) && (tripType==1)){
+                yasIndirimi=(normalPrice*50)/100;
+                indirimliTutar=normalPrice-yasIndirimi;
+                gidisDonus=(indirimliTutar*20)/100;
+                toplamTutar=(indirimliTutar-gidisDonus)*2;
+                System.out.print("Toplam Tutar :" + toplamTutar);
+            } else if ((age<12)&&(tripType==2)) {
+                yasIndirimi=(normalPrice*50)/100;
+                indirimliTutar=normalPrice-yasIndirimi;
+                System.out.println("Toplam Tutar :" + indirimliTutar);
+            } else if ((age>12) && (age<24) && (tripType==1)) {
+                yasIndirimi=(normalPrice*10)/100;
+                indirimliTutar=normalPrice-yasIndirimi;
+                gidisDonus=(indirimliTutar*20)/100;
+                toplamTutar=(indirimliTutar-gidisDonus)*2;
+                System.out.println("Toplam Tutar :" + toplamTutar);
+            } else if((age>12) && (age<24) && (tripType==2)) {
+                yasIndirimi=(normalPrice*10)/100;
+                indirimliTutar=normalPrice-yasIndirimi;
+                System.out.println("Toplam Tutar :" + indirimliTutar);
+            } else if ((age>24)&&(age<65)&&(tripType==1)) {
+                gidisDonus=(normalPrice*20)/100;
+                toplamTutar=(normalPrice-gidisDonus)*2;
+                System.out.println("Toplam tutar :" + toplamTutar);
+            } else if ((age>24)&&(age<65)&&(tripType==2)) {
+                System.out.println("Toplam Tutar :" + normalPrice);
+            } else if ((age>65) && tripType==1) {
+                yasIndirimi=(normalPrice*30)/100;
+                indirimliTutar=normalPrice-yasIndirimi;
+                gidisDonus=(indirimliTutar*20)/100;
+                toplamTutar=(indirimliTutar-gidisDonus)*2;
+                System.out.print("Toplam Tutar :" + toplamTutar);
+            } else if ((age>65) && (tripType==2)) {
+                yasIndirimi=(normalPrice*30)/100;
+                indirimliTutar=normalPrice-yasIndirimi;
+                System.out.println("Toplam Tutar :" + indirimliTutar);
+            }else{
+                System.out.println("Hatalı veri Girdiniz!");
+            }
+        }else {
+            System.out.println("Hatalı Mesafe Girişi");
         }
+
+
     }
 }
