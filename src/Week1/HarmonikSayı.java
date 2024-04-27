@@ -11,10 +11,11 @@ public class HarmonikSayı {
         System.out.print("Bir Sayı Giriniz :");
         n=input.nextInt();
 
-        //i sayısını da double aldık çünkü int tanımlarsak hep 1 sonucunu alırız.Harmonik serinin formülünü yazdık.
+        //i sayısını da double aldık çünkü int tanımlarsak hep virgülden önceki sonucunu alırız.Harmonik serinin formülünü yazdık.
         for(double i=1;i<=n;i++){
             toplam+=1/i;
         }
+        System.out.print("Harmonik Serisi : ");
         System.out.println(toplam);
     }
 }
