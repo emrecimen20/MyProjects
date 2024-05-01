@@ -1,5 +1,10 @@
 package Week2.OgrenciBilgiSistemi;
+/*Course Sınıfı Özellikleri :
 
+Nitelikler : name,code,prefix,note,Teacher
+Metotlar : Course() , addTeacher() , printTeacher()
+Teacher Sınıfı Özellikleri :
+ */
 public class Course {
     Teacher courseTeacher;
     String name;

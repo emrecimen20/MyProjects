@@ -1,5 +1,11 @@
 package Week2.OgrenciBilgiSistemi;
 
+
+/*Teacher Sınıfı Özellikleri :
+Nitelikler : name,mpno,branch
+Metotlar : Teacher()
+
+ */
 public class Teacher {
     String name;
     String phnumb;
