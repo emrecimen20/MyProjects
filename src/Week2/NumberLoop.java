@@ -16,7 +16,7 @@ public class NumberLoop {
     public static void loop(int number) {
 
 
-        //Bu kpşulu sağlayarak ve recursive metot kullanarak deseni elde ettik.
+        //Bu koşulu sağlayarak ve recursive metot kullanarak deseni elde ettik.
        if(number<=0){
            System.out.print(number+ " ");
            return;
