@@ -27,12 +27,12 @@ public class Employees {
     public double bonus(){
        double bonus=0.0,toplam=0.0;
        if(this.workHours>40){
-           for(double i=1;i<=this.workHours-40;i++){
+           for(double i=1.0;i<=this.workHours-40;i++){
                toplam=i;
                bonus=(toplam)*30;
            }
        }else{
-           return 0;
+           return 0.0;
        }
        return bonus;
     }
