@@ -1,7 +1,7 @@
 package Week2;
 import java.util.Scanner;
 
-public class ArrayInportNumber {
+public class ArrayImportNumber {
     public static void main(String[] args) {
         int n; boolean sayiBulundu;
         Scanner input=new Scanner(System.in);
