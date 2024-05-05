@@ -32,8 +32,10 @@ public class MatrisTranspozu {
         }
 
         //Matrisi ve bu matrisin transpozunu yazdırdım.
+        System.out.println("Eski matris :");
         printMatrix(matris);
         System.out.println("=================");
+        System.out.println("Matrisin Transpozu :");
         printMatrix(matrisTranspoze);
 
 
