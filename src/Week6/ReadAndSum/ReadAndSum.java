@@ -21,7 +21,8 @@ public class ReadAndSum {
             }
 
             System.out.println(sum); // Toplamı burada yazdırıyoruz.
-
+            readFile.close();
+            buffReader.close();
         } catch (Exception e) {
             System.out.println(e.getMessage()); // Hata mesajı.
         }
