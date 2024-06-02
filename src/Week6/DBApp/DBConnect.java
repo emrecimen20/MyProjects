@@ -12,9 +12,12 @@ public class DBConnect {
         Connection connect = null;
         String sql = "SELECT * FROM employees ";
         try {
+            // Veri tabanına bağlanma işlemi
             connect = DriverManager.getConnection(DB_URL,DB_USER,DB_PASSWORD);
             Statement st = connect.createStatement();
-           ResultSet data = st.executeQuery(sql);
+            ResultSet data = st.executeQuery(sql);
+
+           // Tablodaki elemanlarını tüm verileriyle yazdırdım
            while(data.next()){
                System.out.println("ID : " + data.getInt("id"));
                System.out.println("Name : " + data.getString("name"));
